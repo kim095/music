@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<style type="text/css">
+		.container{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
 </head>
 <body>
+	<div class="container">
+	</div>
 </body>
 <script type="text/javascript">
-	window.location.href="http://47.94.82.235:9000"
+	var iframe = document.createElement('iframe');
+	iframe.src="http://47.94.82.235:9000";
+	iframe.style.width="100%";
+	iframe.style.height="100%";
+	document.getElementsByClassName("container")[0].appendChild(iframe);
 </script>
 </html>
